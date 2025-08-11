@@ -27,7 +27,7 @@ while(<DATA>){
 	#get serial from each line
 	my ($seq,$min,$max, $sign, $serial, $name) = split(/\s+/);
 
-	#in Python ,use in  for convince
+	#in Python ,use in  for convenience
 	unless (grep $_->[2] eq $serial ,@name_array){
 		push  @name_array, [$seq,$sign,$serial,$name];
 	} ;
